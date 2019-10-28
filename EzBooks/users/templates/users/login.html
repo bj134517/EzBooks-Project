@@ -1,0 +1,17 @@
+{% extends "ez_main/base.html" %}
+
+{% block header %}
+    <h2>Login to your account.</h2>
+{% endblock header %}
+
+{% block content %}
+
+    <form method="post" action="{% url 'users:login' %}" class="form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit" class="login-btn">Login</button>
+
+        <input type="hidden" name="next" value="{% url 'ez_main:home_page' %}"/>
+    </form>
+
+{% endblock content %}
