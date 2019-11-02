@@ -1,0 +1,36 @@
+{% extends "ez_main/base.html" %}
+
+{% block header %}
+<h2 class="col-md-12 text-center text-black mb-5">Sign up Form</h2><hr />
+{% endblock header %}
+
+{% block content %}
+<div class="container py-5">
+   <div class="row">
+      <div class="col-md-12">
+         <div class="row">
+            <div class="col-md-6 mx-auto">
+               <div class="card border-secondary">
+                  <div class="card-header">
+                  <h3 class="mb-1 my-2">Sign Up</h3>
+                  </div>
+                  <div class="card-body">
+                     <form method="post" action="{% url 'users:register' %}">
+                     {% csrf_token %}
+                     {{ form.as_p }}
+
+                     <button name="submit" class="btn btn-outline-primary text-center mt-3">register</button>
+                     <input type="hidden" name="next" value="{% url 'ez_main:home_page' %}"/>
+                     <p class="mt-5 mb-5 text-center"> Already have an account?<a href="{% url 'users:login' %}"><i>log in here</i></a></p>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br />
+   <hr />
+</div>
+
+{% endblock content %}
