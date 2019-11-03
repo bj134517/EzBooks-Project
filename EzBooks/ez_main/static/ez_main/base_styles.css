@@ -2,7 +2,6 @@
 
 html {
     background: url(library.jpg) no-repeat center center fixed;
-    background-size: cover;
 }
 
 header {
@@ -23,3 +22,4 @@ header h1 {
 .login-link {
     color: white;
 }
+

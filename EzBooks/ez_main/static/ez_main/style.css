@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900,900i|Poppins:400,500,500i,600,800|Courgette:400|Raleway:400,500,600,700|Lora:400,700|Open+Sans:400,600,700,800|Lobster+Two:400,700|Prata|Playfair+Display:400,700,700i,900,900i|Londrina+Outline|Rubik|Cormorant+Garamond:400,600,700|Dosis:400,600,700,800|Playball|Cabin:400,400i,500,600,70|Frank+Ruhl+Libre:400,500,700,900|Cookie");
+
+html{
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+a{
+  color: #ca3c08;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #ac0404;
+}
+
+a:focus{
+  outline: thin dotted;
+}
+
+a:active, a:hover{
+  color: #ea9629;
+  outline: 0;
+}
+
+a:hover{
+  
+  text-decoration: underline;
+}
+
+html{
+  overflow: hidden;
+  overflow-y: auto; 
+}
+
+body{
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+  color: #18012c;
+  font-weight: 400;
+}
+
+a{
+  transition: all 0.4s ease-in-out 0s;
+}
+
+h1, h2, hr{
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+h1, h2{
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+  color: #18012c;
+}
+
+h1{
+  font-size: 42px;
+}
+
+h2{
+  font-size: 30px; }
+
+h1,h2{
+  font-weight: 700;
+}
+
+a:hover, a:focus, a:active{
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited{
+  color: inherit;
+}
+
+.wrapper{
+  position: relative;
+}
+
+/* Section Padding Top Bottom */
+.section-ptb-120{
+  padding: 120px 0;
+}
+
+/*-- ----------------
+    Custom Row
+-------------------------*/
+
+.row--2 {
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+/*============================
+    Cleaning Home Btn 
+=============================*/
+.cln-btn {
+  display: inline-block;
+  background: #03a9f4;
+  color: #fff;
+  height: 54px;
+  padding: 0 54px;
+  line-height: 54px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.4s ease-in-out;
+}
+ 
+
+/*==========================
+    Flipbox Style Css
+============================*/
+.square-flip{
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -webkit-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
+  -ms-transform: perspective(1000px);
+  transform: perspective(1000px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 380px;
+  margin-top: 30px;
+}
+
+.square, .square2{
+  width: 100%;
+  height: 100%;
+}
+
+.square{
+  background-size: cover;
+  background-position: center center;
+  -ms-transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  -webkit-transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.square-flip .square{
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.square-flip:hover .square{
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+
+.square-flip .square2{
+  background-size: cover;
+  background-position: center center;
+  -ms-transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  -webkit-transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.square-flip .square2{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.square-flip:hover .square2{
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+/*Square content*/
+.square-flip .square-container{
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  -webkit-transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  -webkit-transform: translateY(-50%) translateX(0px) scale(1);
+  -ms-transform: translateY(-50%) translateX(0px) scale(1);
+  transform: translateY(-50%) translateX(0px) scale(1);
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+.square-flip:hover .square-container{
+  -webkit-transform: translateY(-50%) translateX(-650px) scale(0.88);
+  -ms-transform: translateY(-50%) translateX(-650px) scale(0.88);
+  transform: translateY(-50%) translateX(-650px) scale(0.88);
+  transform-style: preserve-3d;
+}
+
+.square-flip .square-container2{
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  -webkit-transition: transform 0.6s cubic-bezier(0.5, 0.3, 0.3, 1);
+  -webkit-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(0.88);
+  -ms-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(0.88);
+  transform: translateY(-50%) translateX(650px) translateZ(60px) scale(0.88);
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+.square-flip:hover .square-container2 {
+  -webkit-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+  -ms-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+  transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+  transform-style: preserve-3d; }
+
+/*Style text*/
+.square-flip .square-container span{
+  color: #333333;
+  font-size: 50px;
+}
+
+.square-flip .square-container h2{
+  color: #333333;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 22px;
+}
+ 
+.square-flip .square-container2 span{
+  color: #efefef;
+  font-size: 50px;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.square-flip .square-container2 h2{
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.square-flip .square-container2 p{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+}
+
+/*Elements Bg Color & Image*/
+.flip-overlay{
+  display: block;
+  background: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.square2{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.square2 .flip-overlay{
+    display: block;
+    background: rgba(237, 85, 45, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+/* --------------------------
+    Footer Default
+----------------------------*/
+.copyright .content p {
+  width: 100%;
+  background-color: #e0e0e0;
+  color: #000000;
+  font-size: 14px;
+  padding: 30px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+/* ==========================
+    Slide Area Css 
+=============================*/
+.ht-slide.slider-style-2 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+background-color: #0a1009; }
+
+.ht-slide.slider-style-2 .hero-charity.content h2 {
+    color: #e1c265;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .ht-slide.slider-style-2 .hero-charity.content h1 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #e1c265;
+    margin-bottom: 35px;
+  }
+
+  .ht-slide.slider-style-2 .hero-charity.content p{
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 35px;
+    line-height: 30px;
+    padding: 0 24%;
+  }
+
+  .ht-slide.slider-style-2 .hero-charity.content .slide-btn{
+    margin: 0 -10px;
+  }
+
+  .ht-slide.slider-style-2 .hero-charity.content .slide-btn a.cln-btn{
+      height: 50px;
+      padding: 0 30px;
+      line-height: 47px;
+      background: #e1c265;
+      font-family: "Montserrat", sans-serif;
+      border: 2px solid #e1c265;
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 500;
+      border-radius: 26px;
+      margin: 0 10px;
+    }
+
+/* Flip Box */
+.charity-flip .square2 .flip-overlay {
+  background: rgba(225, 194, 101, 0.9);
+}
