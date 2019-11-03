@@ -1,5 +1,137 @@
 {% extends "ez_main/base.html" %}
 
-{% block content %}
-
-{% endblock content %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--Fontawesome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    </style>
+   
+      
+  </head>
+  
+  <body>
+      {% block content %}
+      <div id="wrapper" class="wrapper">
+  
+          
+          <!--// Header -->
+  
+          <!-- Start Slider Area -->
+          <div class="ht-mega-slider mt-5">
+              <div>
+                  <!-- Start Single Slide -->
+                  <div class="ht-slide slider-style-2 d-flex align-items-center animation__style--1">
+                      <div class="container">
+                          <div class="row align-items-center text-left">
+                              <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                                  <div class="hero-charity content text-center">
+                                      <h2>Let Us Help You Today!</h2>
+                                      <h1>Make Your Shopping Experience Better</h1>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                      <div class="slide-btn">
+                                          <a class="cln-btn" href="{% url 'users:register' %}">Get Started</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End Single Slide -->
+              </div>
+          </div>
+          <!-- End Slider Area -->
+  
+          <!-- Page Conttent -->
+          <div class="page-content">
+  
+              <!-- Start Flipbox Style-->
+              <div class="section-flipbox section-ptb-120">
+                  <div class="container">
+                      
+                      <div class="row">
+                          <!-- Start Single Flipbox -->
+                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                              <div class="square-flip charity-flip">
+                                  <div class='square'>
+                                      <div class="square-container">
+                                          <span>01</span>
+                                          <h2>About SEI</h2>
+                                      </div>
+                                      <div class="flip-overlay"></div>
+                                  </div>
+  
+                                  <div class='square2'>
+                                      <div class="square-container2">
+                                          <span>01</span>
+                                          <h2>About SEI</h2>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusml tempor incidunt ut labore et dolore </p>
+                                      </div>
+                                      <div class="flip-overlay"></div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <!-- End Single Flipbox -->
+                          <!-- Start Single Flipbox -->
+                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                              <a href="#" >
+                                 <div class="square-flip charity-flip">
+                                     <div class='square'>
+                                         <div class="square-container">
+                                             <span>02</span>
+                                             <h2>Our Team</h2>
+                                         </div>
+                                         <div class="flip-overlay"></div>
+                                     </div>
+  
+                                     <div class='square2'>
+                                         <div class="square-container2">
+                                             <span>02</span>
+                                             <h2>Our Team</h2>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusml tempor incidunt ut labore et dolore </p>
+                                         </div>
+                                         <div class="flip-overlay"></div>
+                                     </div>
+                                 </div>
+                              </a>
+                          </div>
+                          <!-- End Single Flipbox -->
+                          <!-- Start Single Flipbox -->
+                          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                              <div class="square-flip charity-flip">
+                                  <div class='square'>
+                                      <div class="square-container">
+                                          <span>03</span>
+                                          <h2>Services</h2>
+                                      </div>
+                                      <div class="flip-overlay"></div>
+                                  </div>
+  
+                                  <div class='square2'>
+                                      <div class="square-container2">
+                                          <span>03</span>
+                                          <h2>Services</h2>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusml tempor incidunt ut labore et dolore </p>
+                                      </div>
+                                      <div class="flip-overlay"></div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <!-- End Single Flipbox -->
+  
+                      </div>
+                  </div>
+              </div>
+              <!-- End Flipbox Style-->
+              
+          
+        </div>
+               {% endblock %}
+            
+  
+  </body>
+  
+  </html>
