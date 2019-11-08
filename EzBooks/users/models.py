@@ -26,7 +26,7 @@ class User_profile_manager(BaseUserManager):
 class User_profile(AbstractBaseUser):
     """ Model for the custom user profile """
     username = models.CharField(max_length=40, unique=True)
-    major = models.CharField(max_length=100, default='Undecided')
+    major = models.CharField(max_length=100)
 
     is_active = models.BooleanField(default=True)
     is_admin  = models.BooleanField(default=False)
