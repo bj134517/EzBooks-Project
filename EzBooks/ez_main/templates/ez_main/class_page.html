@@ -1,0 +1,14 @@
+{% extends "ez_main/base.html" %}
+
+{% block content %}
+<div>
+    <h1>This is suppose be class page, I don't know why the text box.</h1>
+    <h2>Hello, {{user.username}}</h2>
+    <h3>Here are your classes {{user.class_schedule.class1}}, 
+                              {{user.class_schedule.class2}}, 
+                              {{user.class_schedule.class3}},
+                              {{user.class_schedule.class4}},
+                              {{user.class_schedule.class5}},
+                              {{user.class_schedule.class6}}</h3>
+</div>
+{% endblock content %}

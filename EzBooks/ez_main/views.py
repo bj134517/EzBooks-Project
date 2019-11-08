@@ -7,3 +7,6 @@ from django.shortcuts import render
 def home_page(request):
     """ Return the home page for ez_main """
     return render(request, 'ez_main/home_page.html')
+
+def class_page(request):
+    return render(request, 'ez_main/class_page.html')
